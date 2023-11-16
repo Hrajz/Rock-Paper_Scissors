@@ -1,0 +1,35 @@
+
+body{
+    background-color: rgb(0,0,0,0.85);
+}
+/* /* .centre{
+    border: 2px solid yellow;
+    /* justify-content: center; 
+} */
+h1,h3,li,h2,.centre{ 
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+.image{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    filter: invert(30%);
+}
+.btn{
+    border-radius: 50%;
+    margin: 10px;
+    border: 3px solid rgb(225, 157, 157);
+    box-shadow:  0 0 7px #f7f6f6,
+    0 0 25px rgb(116, 109, 109);
+}
+.newGame{
+    margin: 20px;
+    width: 150px;
+    background-color: rgba(64, 255, 0, 0.241);
+    border-radius: 10px;
+    color: #f7f6f6;
+    display: block;
+    justify-content: center;
+}
