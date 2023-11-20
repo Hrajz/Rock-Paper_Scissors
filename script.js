@@ -4,6 +4,7 @@ let score = JSON.parse(localStorage.getItem('score')) || {wins : 0, loses : 0, T
 let choice = document.querySelector(".js-choice");
 let result = document.querySelector(".js-result");
 let score_update = document.querySelector(".js-score");
+const sound = new Audio('img/move.mp3');
 
 score_update.innerHTML = 
     `<li>Wins : ${score.wins}</li>
@@ -12,6 +13,7 @@ score_update.innerHTML =
 
 
 function playGame(playerMove){
+    sound.play();
     const cm=Math.floor(Math.random() * 3);
     let computerMove;
     if(cm===0){
